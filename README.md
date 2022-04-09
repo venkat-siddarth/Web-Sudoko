@@ -1,2 +1,3 @@
-# Web-Sudoko
+# Web Sudoko
+------
 Sudoko Game
