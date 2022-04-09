@@ -1,0 +1,38 @@
+#title
+{
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+div.panel
+{
+	text-align: center;
+}
+
+div.cell
+{
+	float: left;
+	border-style: solid;
+	border-width: thin;
+}
+
+div.note_value
+{
+	float: left;
+	width: 20px;
+	height: 20px;
+}
+
+div.cell_value
+{
+	float: left;
+	width: 60px;
+	height: 60px;
+}
+
+div.block_row
+{
+	clear: both;
+}
+
+

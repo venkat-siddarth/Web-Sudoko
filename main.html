@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>数独</title>
+	</head>
+	<body>
+		<script src="script.js"></script>
+		<div class="panel">
+			<p id="title">数独</p>
+		</div>
+		<div class="panel">
+			<div class="row">
+				<div class="block">
+					<div class="block_row">
+						<div class="cell">
+							<div id="r1c1_note" class="note_block">
+								<div class="note_row">
+									<div id="r1c1_note_1" class="note_value">1</div>
+									<div id="r1c1_note_2" class="note_value">2</div>
+									<div id="r1c1_note_3" class="note_value">3</div>
+								</div>
+								<div class="note_row">
+									<div id="r1c1_note_4" class="note_value">4</div>
+									<div id="r1c1_note_5" class="note_value">5</div>
+									<div id="r1c1_note_6" class="note_value">6</div>
+								</div>
+								<div class="note_row">
+									<div id="r1c1_note_7" class="note_value">7</div>
+									<div id="r1c1_note_8" class="note_value">8</div>
+									<div id="r1c1_note_9" class="note_value">9</div>
+								</div>
+							</div>
+							<div id="r1c1_value" class="cell_value" hidden="true"></div>
+						</div>
+						<div class="cell">
+							<div id="r1c2_note" class="note_block">
+								<div class="note_row">
+									<div id="r1c2_note_1" class="note_value">1</div>
+									<div id="r1c2_note_2" class="note_value">2</div>
+									<div id="r1c2_note_3" class="note_value">3</div>
+								</div>
+								<div class="note_row">
+									<div id="r1c2_note_4" class="note_value">4</div>
+									<div id="r1c2_note_5" class="note_value">5</div>
+									<div id="r1c2_note_6" class="note_value">6</div>
+								</div>
+								<div class="note_row">
+									<div id="r1c2_note_7" class="note_value">7</div>
+									<div id="r1c2_note_8" class="note_value">8</div>
+									<div id="r1c2_note_9" class="note_value">9</div>
+								</div>
+							</div>
+							<div id="r1c2_value" class="cell_value" hidden="true"></div>
+						</div>
+						<div class="cell">
+							<div id="r1c3_note" class="note_block">
+								<div class="note_row">
+									<div id="r1c3_note_1" class="note_value">1</div>
+									<div id="r1c3_note_2" class="note_value">2</div>
+									<div id="r1c3_note_3" class="note_value">3</div>
+								</div>
+								<div class="note_row">
+									<div id="r1c3_note_4" class="note_value">4</div>
+									<div id="r1c3_note_5" class="note_value">5</div>
+									<div id="r1c3_note_6" class="note_value">6</div>
+								</div>
+								<div class="note_row">
+									<div id="r1c3_note_7" class="note_value">7</div>
+									<div id="r1c3_note_8" class="note_value">8</div>
+									<div id="r1c3_note_9" class="note_value">9</div>
+								</div>
+							</div>
+							<div id="r1c3_value" class="cell_value" hidden="true"></div>
+						</div>
+					</div>
+					<div class="block_row">
+						<div class="cell">
+							<div id="r2c1_note" class="note_block">
+								<div class="note_row">
+									<div id="r2c1_note_1" class="note_value">1</div>
+									<div id="r2c1_note_2" class="note_value">2</div>
+									<div id="r2c1_note_3" class="note_value">3</div>
+								</div>
+								<div class="note_row">
+									<div id="r2c1_note_4" class="note_value">4</div>
+									<div id="r2c1_note_5" class="note_value">5</div>
+									<div id="r2c1_note_6" class="note_value">6</div>
+								</div>
+								<div class="note_row">
+									<div id="r2c1_note_7" class="note_value">7</div>
+									<div id="r2c1_note_8" class="note_value">8</div>
+									<div id="r2c1_note_9" class="note_value">9</div>
+								</div>
+							</div>
+							<div id="r2c1_value" class="cell_value" hidden="true"></div>
+						</div>
+						<div class="cell">
+							<div id="r2c2_note" class="note_block">
+								<div class="note_row">
+									<div id="r2c2_note_1" class="note_value">1</div>
+									<div id="r2c2_note_2" class="note_value">2</div>
+									<div id="r2c2_note_3" class="note_value">3</div>
+								</div>
+								<div class="note_row">
+									<div id="r2c2_note_4" class="note_value">4</div>
+									<div id="r2c2_note_5" class="note_value">5</div>
+									<div id="r2c2_note_6" class="note_value">6</div>
+								</div>
+								<div class="note_row">
+									<div id="r2c2_note_7" class="note_value">7</div>
+									<div id="r2c2_note_8" class="note_value">8</div>
+									<div id="r2c2_note_9" class="note_value">9</div>
+								</div>
+							</div>
+							<div id="r2c2_value" class="cell_value" hidden="true"></div>
+						</div>
+						<div class="cell">
+							<div id="r2c3_note" class="note_block">
+								<div class="note_row">
+									<div id="r2c3_note_1" class="note_value">1</div>
+									<div id="r2c3_note_2" class="note_value">2</div>
+									<div id="r2c3_note_3" class="note_value">3</div>
+								</div>
+								<div class="note_row">
+									<div id="r2c3_note_4" class="note_value">4</div>
+									<div id="r2c3_note_5" class="note_value">5</div>
+									<div id="r2c3_note_6" class="note_value">6</div>
+								</div>
+								<div class="note_row">
+									<div id="r2c3_note_7" class="note_value">7</div>
+									<div id="r2c3_note_8" class="note_value">8</div>
+									<div id="r2c3_note_9" class="note_value">9</div>
+								</div>
+							</div>
+							<div id="r2c3_value" class="cell_value" hidden="true"></div>
+						</div>
+					</div>
+					<div class="block_row">
+						<div class="cell">
+							<div id="r3c1_note" class="note_block">
+								<div class="note_row">
+									<div id="r3c1_note_1" class="note_value">1</div>
+									<div id="r3c1_note_2" class="note_value">2</div>
+									<div id="r3c1_note_3" class="note_value">3</div>
+								</div>
+								<div class="note_row">
+									<div id="r3c1_note_4" class="note_value">4</div>
+									<div id="r3c1_note_5" class="note_value">5</div>
+									<div id="r3c1_note_6" class="note_value">6</div>
+								</div>
+								<div class="note_row">
+									<div id="r3c1_note_7" class="note_value">7</div>
+									<div id="r3c1_note_8" class="note_value">8</div>
+									<div id="r3c1_note_9" class="note_value">9</div>
+								</div>
+							</div>
+							<div id="r3c1_value" class="cell_value" hidden="true"></div>
+						</div>
+						<div class="cell">
+							<div id="r3c2_note" class="note_block">
+								<div class="note_row">
+									<div id="r3c2_note_1" class="note_value">1</div>
+									<div id="r3c2_note_2" class="note_value">2</div>
+									<div id="r3c2_note_3" class="note_value">3</div>
+								</div>
+								<div class="note_row">
+									<div id="r3c2_note_4" class="note_value">4</div>
+									<div id="r3c2_note_5" class="note_value">5</div>
+									<div id="r3c2_note_6" class="note_value">6</div>
+								</div>
+								<div class="note_row">
+									<div id="r3c2_note_7" class="note_value">7</div>
+									<div id="r3c2_note_8" class="note_value">8</div>
+									<div id="r3c2_note_9" class="note_value">9</div>
+								</div>
+							</div>
+							<div id="r3c2_value" class="cell_value" hidden="true"></div>
+						</div>
+						<div class="cell">
+							<div id="r3c3_note" class="note_block">
+								<div class="note_row">
+									<div id="r3c3_note_1" class="note_value">1</div>
+									<div id="r3c3_note_2" class="note_value">2</div>
+									<div id="r3c3_note_3" class="note_value">3</div>
+								</div>
+								<div class="note_row">
+									<div id="r3c3_note_4" class="note_value">4</div>
+									<div id="r3c3_note_5" class="note_value">5</div>
+									<div id="r3c3_note_6" class="note_value">6</div>
+								</div>
+								<div class="note_row">
+									<div id="r3c3_note_7" class="note_value">7</div>
+									<div id="r3c3_note_8" class="note_value">8</div>
+									<div id="r3c3_note_9" class="note_value">9</div>
+								</div>
+							</div>
+							<div id="r3c3_value" class="cell_value" hidden="true"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
