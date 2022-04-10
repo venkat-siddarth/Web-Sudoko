@@ -1,0 +1,45 @@
+#title {
+	font-size: xx-large;
+	font-weight: bold;
+	text-align: center;
+}
+
+#menu {
+	float: left;
+	text-align: center;
+	margin: 10px;
+}
+
+#content {
+	float: left;
+	margin: 10px;
+}
+
+div.cell {
+	float: left;
+	border-style: solid;
+	border-width: thin;
+}
+
+div.row {
+	float: left;
+}
+
+div.note_value {
+	float: left;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+}
+
+div.cell_value {
+	float: left;
+	width: 60px;
+	height: 60px;
+}
+
+div.block_row {
+	clear: both;
+}
+
+
