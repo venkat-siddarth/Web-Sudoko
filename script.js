@@ -24,28 +24,26 @@ function revealNote(row, col, val){
 
 function initCell(row, col) {
 	var cellBaseName = "r" + row + "c" + col;
-	var cellHtml = "\
-	<div class=\"cell\">\
-		<div id=\"" + cellBaseName + "_note\" class=\"note_block\">\
-			<div class=\"note_row\">\
-				<div id=\"" + cellBaseName + "_note_1\" class=\"note_value\">1</div>\
-				<div id=\"" + cellBaseName + "_note_2\" class=\"note_value\">2</div>\
-				<div id=\"" + cellBaseName + "_note_3\" class=\"note_value\">3</div>\
-			</div>\
-			<div class=\"note_row\">\
-				<div id=\"" + cellBaseName + "_note_4\" class=\"note_value\">4</div>\
-				<div id=\"" + cellBaseName + "_note_5\" class=\"note_value\">5</div>\
-				<div id=\"" + cellBaseName + "_note_6\" class=\"note_value\">6</div>\
-			</div>\
-			<div class=\"note_row\">\
-				<div id=\"" + cellBaseName + "_note_7\" class=\"note_value\">7</div>\
-				<div id=\"" + cellBaseName + "_note_8\" class=\"note_value\">8</div>\
-				<div id=\"" + cellBaseName + "_note_9\" class=\"note_value\">9</div>\
-			</div>\
-		</div>\
-		<div id=\"" + cellBaseName + "_value\" class=\"cell_value\" hidden></div>\
-	</div>\
-	";
+	var cellHtml = "<div class=\"cell\">";
+	cellHtml += "<div id=\"" + cellBaseName + "_note\" class=\"note_block\">";
+	cellHtml += "<div class=\"note_row\">";
+	cellHtml += "<div id=\"" + cellBaseName + "_note_1\" class=\"note_value\">1</div>";
+	cellHtml += "<div id=\"" + cellBaseName + "_note_2\" class=\"note_value\">2</div>";
+	cellHtml += "<div id=\"" + cellBaseName + "_note_3\" class=\"note_value\">3</div>";
+	cellHtml += "</div>";
+	cellHtml += "<div class=\"note_row\">";
+	cellHtml += "<div id=\"" + cellBaseName + "_note_4\" class=\"note_value\">4</div>";
+	cellHtml += "<div id=\"" + cellBaseName + "_note_5\" class=\"note_value\">5</div>";
+	cellHtml += "<div id=\"" + cellBaseName + "_note_6\" class=\"note_value\">6</div>";
+	cellHtml += "</div>";
+	cellHtml += "<div class=\"note_row\">";
+	cellHtml += "<div id=\"" + cellBaseName + "_note_7\" class=\"note_value\">7</div>";
+	cellHtml += "<div id=\"" + cellBaseName + "_note_8\" class=\"note_value\">8</div>";
+	cellHtml += "<div id=\"" + cellBaseName + "_note_9\" class=\"note_value\">9</div>";
+	cellHtml += "</div>";
+	cellHtml += "</div>";
+	cellHtml += "<div id=\"" + cellBaseName + "_value\" class=\"cell_value\" hidden></div>";
+	cellHtml += "</div>";
 	return cellHtml;
 }
 

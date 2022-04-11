@@ -42,4 +42,7 @@ div.block_row {
 	clear: both;
 }
 
-
+div.block {
+	border-style: solid;
+	border-width: medium;
+}
